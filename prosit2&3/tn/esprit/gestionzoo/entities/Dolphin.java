@@ -8,13 +8,13 @@ public class Dolphin extends Aquatic {
         this.swimmingSpeed = 0.0f;
     }
 
+    public void swim() {
+        System.out.println("This dolphin is swimming at a speed of " + swimmingSpeed + " km/h.");
+    }
+
     public Dolphin(String family, String name, int age, boolean isMammal, String habitat, float swimmingSpeed) {
         super(family, name, age, isMammal, habitat);
         this.swimmingSpeed = swimmingSpeed;
-    }
-
-    public void swim() {
-        System.out.println("Le dauphin nage.");
     }
 
     public float getSwimmingSpeed() {

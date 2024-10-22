@@ -8,6 +8,10 @@ public class Penguin extends Aquatic {
         this.swimmingDepth = 0.0f;
     }
 
+    public void swim() {
+        System.out.println("This penguin is swimming at a depth of " + swimmingDepth + " meters.");
+    }
+    
     public Penguin(String family, String name, int age, boolean isMammal, String habitat, float swimmingDepth) {
         super(family, name, age, isMammal, habitat);
         this.swimmingDepth = swimmingDepth;
